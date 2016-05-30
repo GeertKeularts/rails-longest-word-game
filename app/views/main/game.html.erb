@@ -1,0 +1,14 @@
+<div class="center-text">
+  <h1>Welcome to the longest word game</h1>
+  <p>Here is your random grid:</p>
+  <p><%= @grid %></p>
+  <form action="/score">
+    <label for="answer">Give me your best shot</label>
+    <input type="text" name="answer" placeholder="Your answer">
+    <input type="hidden" name="grid" value=<%= @random  %>>
+    <input type="hidden" name="time" value= <%= @time  %> >
+    <input type="submit" value="submit">
+  </form>
+</div>
+
+
